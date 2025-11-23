@@ -58,7 +58,7 @@ graph LR
 ​OpenAI API Key
 
 ## Clone the repository:
-git clone [https://github.com/YOUR_USERNAME/ai-interviewer-backend.git](https://github.com/YOUR_USERNAME/ai-interviewer-backend.git)
+git clone [https://github.com/YOUR_USERNAME/ai-interviewer-backend.git](https://github.com/Xzavior34/ai-interviewer-backend.git)
 cd ai-interviewer-backend
 ## Set up Environment:
 Create a .env file in the root directory:
