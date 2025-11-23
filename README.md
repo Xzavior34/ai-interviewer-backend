@@ -38,6 +38,7 @@ graph LR
 ```
 
 ## 📂Project Structure
+```
 /ai-interviewer-backend
 │
 ├── app/
@@ -50,6 +51,7 @@ graph LR
 ├── Dockerfile             # Containerization
 ├── requirements.txt       # Dependencies
 └── README.md              # Documentation
+```
 ## ✨ Key Features
 ​🛡️ Strict Type Safety: Leverages Pydantic for rigorous request/response validation. Prevents "garbage in" data from reaching the logic layer.
 ​🎯 Deterministic AI Outputs: Utilizes OpenAI's response_format={"type": "json_object"} to guarantee the LLM returns parseable JSON, eliminating brittle regex parsing.
