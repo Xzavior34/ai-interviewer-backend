@@ -30,7 +30,9 @@ graph LR
     D -->|Async Request| E[OpenAI GPT-3.5]
     E -->|JSON Response| D
     D -->|Result| A
+
 ## 📂 Project Structure
+
 /ai-interviewer-backend
 │
 ├── app/
