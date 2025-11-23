@@ -30,7 +30,7 @@ graph LR
     D -->|Async Request| E[OpenAI GPT-3.5]
     E -->|JSON Response| D
     D -->|Result| A
-##📂 Project Structure
+## 📂 Project Structure
 /ai-interviewer-backend
 │
 ├── app/
@@ -43,13 +43,13 @@ graph LR
 ├── Dockerfile             # Containerization
 ├── requirements.txt       # Dependencies
 └── README.md              # Documentation
-##✨ Key Features
+## ✨ Key Features
 ​Strict Type Safety: Leverages Pydantic for rigorous request/response validation. Prevents "garbage in" data from reaching the logic layer.
 ​Deterministic AI Outputs: Utilizes OpenAI's response_format={"type": "json_object"} to guarantee the LLM returns parseable JSON, eliminating brittle regex parsing.
 ​High-Concurrency Ranking: The /rank-candidates endpoint uses asyncio.gather to process generic candidate batches in parallel.
 ​Result: Latency is bounded by the slowest single request (O(1)), rather than the sum of all requests (O(n)).
 ​Production Ready: Includes strict error handling, environment configuration via .env, and Docker containerization.
-​🛠 Installation & Setup
+​## 🛠 Installation & Setup
 ​Prerequisites
 ​Python 3.9+
 ​Docker (Optional)
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ###Run the Server:
 uvicorn app.main:app --reload
 Server will start at http://localhost:8000
-##🧠 Design Decisions
+## 🧠 Design Decisions
 ​1. Why FastAPI over Node.js?
 ​While Node.js is excellent for I/O-bound tasks, FastAPI was selected for:
 ​Data Integrity: The integration with Pydantic ensures that data contracts are enforced before code execution. In an AI API, valid data structure is critical.
