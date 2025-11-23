@@ -25,7 +25,7 @@ A high-performance, asynchronous backend service designed to automate the techni
 
 The application follows a **Service-Layer Pattern** to decouple business logic from the HTTP transport layer. The diagram below illustrates the asynchronous data flow.
 
-
+```mermaid
 graph LR
     A[Client] -->|POST JSON| B(FastAPI Router)
     B -->|Validate| C{Pydantic Models}
@@ -35,6 +35,7 @@ graph LR
     D -->|Result| A
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ## 📂Project Structure
 /ai-interviewer-backend
