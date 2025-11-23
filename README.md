@@ -60,12 +60,12 @@ graph LR
 ###Clone the repository:
 git clone [https://github.com/YOUR_USERNAME/ai-interviewer-backend.git](https://github.com/YOUR_USERNAME/ai-interviewer-backend.git)
 cd ai-interviewer-backend
-###Set up Environment:
+## Set up Environment:
 Create a .env file in the root directory:
 OPENAI_API_KEY=sk-your-actual-api-key-here
-###Install Dependencies:
+## Install Dependencies:
 pip install -r requirements.txt
-###Run the Server:
+## Run the Server:
 uvicorn app.main:app --reload
 Server will start at http://localhost:8000
 ## 🧠 Design Decisions
