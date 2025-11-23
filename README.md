@@ -22,7 +22,7 @@ A high-performance, asynchronous backend service designed to automate the techni
 
 The application follows a **Service-Layer Pattern** to decouple business logic from the HTTP transport layer.
 
-```mermaid
+
 graph LR
     A[Client] -->|POST JSON| B(FastAPI Router)
     B -->|Validate| C{Pydantic Models}
@@ -30,8 +30,8 @@ graph LR
     D -->|Async Request| E[OpenAI GPT-3.5]
     E -->|JSON Response| D
     D -->|Result| A
-
-## 📂 Project Structure
+--'
+## project-structure
 
 /ai-interviewer-backend
 │
