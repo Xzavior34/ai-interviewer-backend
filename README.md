@@ -56,8 +56,8 @@ graph LR
 ​Python 3.9+
 ​Docker (Optional)
 ​OpenAI API Key
-##Option A: Local Development
-###Clone the repository:
+
+## Clone the repository:
 git clone [https://github.com/YOUR_USERNAME/ai-interviewer-backend.git](https://github.com/YOUR_USERNAME/ai-interviewer-backend.git)
 cd ai-interviewer-backend
 ## Set up Environment:
